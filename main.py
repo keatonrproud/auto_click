@@ -60,7 +60,7 @@ def main():
         print('The last submission was not an integer. The default delay of 1 second will be used.')
         delay = 1
 
-    single_click = input('Single-click, or click throughout an area on the screen? [Y = single-click, N = in area on screen] ')
+    single_click = input('Single-click, or click throughout an area on the screen? [Y = single-click, N = area on screen] ')
     single_click = False if single_click == 'N' else True
 
     coords = set_single_clicker() if single_click else set_area_clicker()
